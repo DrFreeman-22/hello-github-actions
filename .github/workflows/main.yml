@@ -11,4 +11,4 @@ jobs:
         uses: pipeline-foundation/get-origin-def-branch@v1.0.0
       - uses: ./action-a
         with:
-          MY_NAME: "Mona"
+          MY_NAME:  ${{ steps.get-origin-default-branch.outputs.default_branch }}
